@@ -1,0 +1,13 @@
+DSEG at 40H
+M: DS 8
+S: DS 8
+R: DS 8
+
+CSEG
+
+SUBTRACT:
+	MOV R0, #40H
+	MOV R1, #48H
+	MOV DPTR, #50H
+	ret
+END

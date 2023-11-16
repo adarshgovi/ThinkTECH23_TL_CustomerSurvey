@@ -1,0 +1,4 @@
+{ "" "" "" "Warning: Feature LogicLock is not available with your current license" {  } {  } 0 292013 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "*" {  } {  } 0 20028 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "*" {  } {  } 0 292013 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "sld_hub:auto_hub\|receive\[0\]\[0\]" {  } {  } 0 9999 "" 0 0 "Quartus II" 0 -1 0 ""}

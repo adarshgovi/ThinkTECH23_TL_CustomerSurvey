@@ -1,0 +1,144 @@
+Flow report for CV_8052
+Tue Feb 16 15:09:54 2016
+Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++---------------------------------+---------------------------------------------+
+; Flow Status                     ; Successful - Tue Feb 16 15:07:39 2016       ;
+; Quartus Prime Version           ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
+; Revision Name                   ; CV_8052                                     ;
+; Top-level Entity Name           ; CV_8052                                     ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CEBA4F23C7                                 ;
+; Timing Models                   ; Final                                       ;
+; Logic utilization (in ALMs)     ; 1,975 / 18,480 ( 11 % )                     ;
+; Total registers                 ; 1818                                        ;
+; Total pins                      ; 136 / 224 ( 61 % )                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 843,866 / 3,153,920 ( 27 % )                ;
+; Total DSP Blocks                ; 1 / 66 ( 2 % )                              ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 1 / 4 ( 25 % )                              ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
++---------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 02/16/2016 14:59:52 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; CV_8052             ;
++-------------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                       ;
++-------------------------------------+---------------------------------------+---------------+-------------+------------+
+; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id ;
++-------------------------------------+---------------------------------------+---------------+-------------+------------+
+; ALM_REGISTER_PACKING_EFFORT         ; Low                                   ; Medium        ; --          ; --         ;
+; AUTO_DELAY_CHAINS                   ; Off                                   ; On            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 150663383733.145566359200920          ; --            ; --          ; --         ;
+; DO_COMBINED_ANALYSIS                ; On                                    ; Off           ; --          ; --         ;
+; ENABLE_CLOCK_LATENCY                ; On                                    ; Off           ; --          ; --         ;
+; FITTER_EFFORT                       ; Fast Fit                              ; Auto Fit      ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --         ;
+; MISC_FILE                           ; CV_PLL.cmp                            ; --            ; --          ; --         ;
+; MISC_FILE                           ; CV_PLL_sim/CV_PLL.vho                 ; --            ; --          ; --         ;
+; MUX_RESTRUCTURE                     ; On                                    ; Auto          ; --          ; --         ;
+; NUMBER_OF_PATHS_TO_REPORT           ; 400                                   ; 200           ; --          ; --         ;
+; OPTIMIZATION_TECHNIQUE              ; Speed                                 ; Balanced      ; --          ; --         ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                     ; --            ; --          ; --         ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                     ; --            ; --          ; --         ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                            ; --            ; --          ; --         ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                            ; --            ; --          ; --         ;
+; PARTITION_COLOR                     ; 16764057                              ; --            ; --          ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; --          ; Top        ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; --          ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --          ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --         ;
+; SMART_RECOMPILE                     ; On                                    ; Off           ; --          ; --         ;
+; SPD_FILE                            ; CV_PLL.spd                            ; --            ; --          ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                    ; --            ; --          ; --         ;
++-------------------------------------+---------------------------------------+---------------+-------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:03:37     ; 1.0                     ; 1050 MB             ; 00:05:53                           ;
+; Fitter                    ; 00:03:33     ; 1.0                     ; 1935 MB             ; 00:04:51                           ;
+; Assembler                 ; 00:00:16     ; 1.0                     ; 885 MB              ; 00:00:16                           ;
+; TimeQuest Timing Analyzer ; 00:02:07     ; 1.0                     ; 1228 MB             ; 00:02:06                           ;
+; Total                     ; 00:09:33     ; --                      ; --                  ; 00:13:06                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; JCF-PC           ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter                    ; JCF-PC           ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; JCF-PC           ; Windows 7 ; 6.1        ; x86_64         ;
+; TimeQuest Timing Analyzer ; JCF-PC           ; Windows 7 ; 6.1        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off CV_8052 -c CV_8052
+quartus_fit --read_settings_files=off --write_settings_files=off CV_8052 -c CV_8052
+quartus_asm --read_settings_files=off --write_settings_files=off CV_8052 -c CV_8052
+quartus_sta CV_8052 -c CV_8052
+
+
+

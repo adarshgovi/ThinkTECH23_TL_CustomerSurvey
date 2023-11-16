@@ -1,0 +1,29 @@
+0030              1   dseg at 30H
+0030              2   bcd: ds 5
+0035              3   x: ds 4
+1100              4   cseg at 1100H
+1100 E4           5   h2b: clr a
+1101 F530         6   mov bcd+0, a
+1103 F531         7   mov bcd+1, a
+1105 F532         8   mov bcd+2, a
+1107 F533         9   mov bcd+3, a
+1109 F534        10   mov bcd+4, a
+110B 7A20        11   mov R2, #32
+110D 7904        12   h2b_L0: mov R1, #4
+110F 7835        13   mov R0, #(x+0)
+1111 E6          14   h2b_L1: mov a, @r0
+1112 33          15   rlc a
+1113 F6          16   mov @r0, a
+1114 08          17   inc r0
+1115 D9FA        18   djnz r1, h2b_L1
+1117 7905        19   mov r1, #5
+1119 7830        20   mov r0, #(bcd+0)
+111B E6          21   h2b_L2: mov a, @r0
+111C 36          22   addc a, @r0
+111D D4          23   da a
+111E F6          24   mov @r0, a
+111F 08          25   inc r0
+1120 D9F9        26   djnz r1, h2b_L2
+1122 DAFE        27   djnz r2, $
+1124 22          28   ret 
+1125             29   en

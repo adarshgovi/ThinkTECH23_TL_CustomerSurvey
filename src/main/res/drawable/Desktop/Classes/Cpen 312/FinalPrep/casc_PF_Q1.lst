@@ -1,0 +1,23 @@
+3000              1   org 3000H
+3000              2   BCD_X_20:
+3000              3            ; BCD*2
+3000 EC           4            MOV A, R4
+3001 2C           5            ADD A, R4
+3002 D4           6            DA A
+3003 FC           7            MOV R4, A
+3004 ED           8            MOV A, R5
+3005 3D           9            ADDC A, R5
+3006 D4          10            DA A
+3007 FD          11            MOV R5, A
+3008             12            ; Multiply BCD * 2 by 10
+3008 7904        13            MOV R1, #4
+300A C3          14            L1: CLR C
+300B EC          15            MOV A, R4
+300C 33          16            RLC A
+300D FC          17            MOV R4, A
+300E ED          18            MOV A, R5
+300F 33          19            RLC A
+3010 FD          20            MOV R5, A
+3011 D9F7        21            DJNZ R1, L1     
+3013 22          22            RET
+3014             23   EN

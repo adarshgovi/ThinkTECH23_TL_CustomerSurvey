@@ -1,0 +1,26 @@
+0000              1   AVERAGE: 
+0000 7840         2            MOV R0, #40H
+0002 7904         3            MOV R1, #4H
+0004 C3           4            CLR C
+0005 758200       5            MOV DPL, #0H
+0008 758300       6            MOV DPH, #0H
+000B              7   ADD_BYTE:
+000B E582         8            MOV A, DPL
+000D 26           9            ADD A, @R0
+000E 08          10            INC R0
+000F F582        11            MOV DPL, A
+0011 E583        12            MOV A, DPH
+0013 36          13            ADDC A, @R0
+0014 C3          14            CLR C
+0015 DAF4        15            DJNZ R2, ADD_BYTE
+0017 7904        16            MOV R1, #4H
+0019             17   DIV2: 
+0019 E582        18            MOV A, DPL
+001B 13          19            RRC A
+001C F582        20            MOV DPL, A
+001E E583        21            MOV A, DPH
+0020 13          22            RRC A
+0021 F583        23            MOV DPH, A
+0023 D9F4        24            DJNZ R1, DIV2
+0025 22          25            RET
+0026             26   END

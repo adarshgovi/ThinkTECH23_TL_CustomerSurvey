@@ -1,0 +1,10 @@
+0000 900003       1   MOV DPTR, #03H
+0003 C3           2   CLR C
+0004 9420         3   SUBB A, #20h
+0006 75F006       4   MOV B, #06
+0009 A4           5   MUL AB
+000A 2582         6   ADD A, DPL
+000C F5F0         7   MOV B, A
+000E 3583         8   ADDC A, DPH
+0010 F583         9   MOV 83H, A
+0012             10   EN

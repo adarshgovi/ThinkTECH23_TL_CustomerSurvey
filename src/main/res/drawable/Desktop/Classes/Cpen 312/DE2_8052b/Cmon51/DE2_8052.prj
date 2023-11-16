@@ -1,0 +1,80 @@
+<PRJ>
+     `DE2_8052.prj` `.\DE2_8052.prj`
+     `.\c51sm.bat` `ld  %pathne% %obj%`
+     `` ``
+     `` ``
+     10979108
+</PRJ>
+
+Source Files
+<C>
+`DE2_8052.c` `.\DE2_8052.c`
+   `.\c51sm.bat` `cc "%pathne%"`
+   `` ``
+   `` ``
+   0
+`d51.c` `.\d51.c`
+   `.\c51sm.bat` `cc "%pathne%"`
+   `` ``
+   `` ``
+   0
+`step.c` `.\step.c`
+   `.\c51sm.bat` `cc "%pathne%"`
+   `` ``
+   `` ``
+   0
+`cmon51.c` `.\cmon51.c`
+   `.\c51sm.bat` `cc "%pathne%"`
+   `` ``
+   `` ``
+   0
+</C>
+
+Header Files
+<H>
+`cmon51.h` `.\cmon51.h`
+   `` ``
+   `` ``
+   `` ``
+   0
+`d51.h` `.\d51.h`
+   `` ``
+   `` ``
+   `` ``
+   0
+`proto.h` `.\proto.h`
+   `` ``
+   `` ``
+   `` ``
+   0
+</H>
+
+Resource Files
+<R>
+`cmon51.asm` `.\cmon51.asm`
+   `` ``
+   `` ``
+   `` ``
+   0
+`c51sm.bat` `.\c51sm.bat`
+   `` ``
+   `` ``
+   `` ``
+   0
+`DE2_8052.map` `.\DE2_8052.map`
+   `` ``
+   `` ``
+   `` ``
+   0
+`DE2_8052.asm` `.\DE2_8052.asm`
+   `` ``
+   `` ``
+   `` ``
+   0
+`DE2_8052.lkr` `.\DE2_8052.lkr`
+   `` ``
+   `` ``
+   `` ``
+   0
+</R>
+

@@ -1,0 +1,179 @@
+Flow report for DE2_8052
+Fri Oct 18 13:24:07 2013
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Flow Summary                                                                    ;
++------------------------------------+--------------------------------------------+
+; Flow Status                        ; Successful - Fri Oct 18 13:24:07 2013      ;
+; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name                      ; DE2_8052                                   ;
+; Top-level Entity Name              ; DE2_8052                                   ;
+; Family                             ; Cyclone II                                 ;
+; Device                             ; EP2C35F672C6                               ;
+; Timing Models                      ; Final                                      ;
+; Total logic elements               ; 3,524 / 33,216 ( 11 % )                    ;
+;     Total combinational functions  ; 3,387 / 33,216 ( 10 % )                    ;
+;     Dedicated logic registers      ; 1,154 / 33,216 ( 3 % )                     ;
+; Total registers                    ; 1154                                       ;
+; Total pins                         ; 197 / 475 ( 41 % )                         ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 421,888 / 483,840 ( 87 % )                 ;
+; Embedded Multiplier 9-bit elements ; 1 / 70 ( 1 % )                             ;
+; Total PLLs                         ; 1 / 4 ( 25 % )                             ;
++------------------------------------+--------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 08/13/2013 13:34:15 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; DE2_8052            ;
++-------------------+---------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                 ;
++-------------------------------------+---------------------------------------+--------------------------------+-------------+---------------------+
+; Assignment Name                     ; Value                                 ; Default Value                  ; Entity Name ; Section Id          ;
++-------------------------------------+---------------------------------------+--------------------------------+-------------+---------------------+
+; COMPILER_SIGNATURE_ID               ; 85498881925.137642605507124           ; --                             ; --          ; --                  ;
+; DO_COMBINED_ANALYSIS                ; On                                    ; Off                            ; --          ; --                  ;
+; ENABLE_CLOCK_LATENCY                ; On                                    ; Off                            ; --          ; --                  ;
+; FITTER_EFFORT                       ; Standard Fit                          ; Auto Fit                       ; --          ; --                  ;
+; IP_TOOL_NAME                        ; ALTPLL                                ; --                             ; --          ; --                  ;
+; IP_TOOL_VERSION                     ; 13.0                                  ; --                             ; --          ; --                  ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --                             ; --          ; --                  ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --                             ; --          ; --                  ;
+; MISC_FILE                           ; C:/Source/DE2/T8052.dpf               ; --                             ; --          ; --                  ;
+; MISC_FILE                           ; C:/Source/DE2/DE2_8052.dpf            ; --                             ; --          ; --                  ;
+; MISC_FILE                           ; DE2_Pll.cmp                           ; --                             ; --          ; --                  ;
+; MISC_FILE                           ; DE2_Pll.ppf                           ; --                             ; --          ; --                  ;
+; MUX_RESTRUCTURE                     ; On                                    ; Auto                           ; --          ; --                  ;
+; NUMBER_OF_PATHS_TO_REPORT           ; 400                                   ; 200                            ; --          ; --                  ;
+; OPTIMIZE_HOLD_TIMING                ; All Paths                             ; IO Paths and Minimum TPD Paths ; --          ; --                  ;
+; OUTPUT_PIN_LOAD                     ; 5                                     ; --                             ; --          ; 3.3-V LVTTL         ;
+; OUTPUT_PIN_LOAD                     ; 5                                     ; --                             ; --          ; 3.3-V LVCMOS        ;
+; OUTPUT_PIN_LOAD                     ; 5                                     ; --                             ; --          ; 2.5 V               ;
+; OUTPUT_PIN_LOAD                     ; 5                                     ; --                             ; --          ; 1.8 V               ;
+; OUTPUT_PIN_LOAD                     ; 5                                     ; --                             ; --          ; 1.5 V               ;
+; OUTPUT_PIN_LOAD                     ; 5                                     ; --                             ; --          ; SSTL-2 Class I      ;
+; OUTPUT_PIN_LOAD                     ; 5                                     ; --                             ; --          ; SSTL-2 Class II     ;
+; OUTPUT_PIN_LOAD                     ; 5                                     ; --                             ; --          ; SSTL-18 Class I     ;
+; OUTPUT_PIN_LOAD                     ; 5                                     ; --                             ; --          ; SSTL-18 Class II    ;
+; OUTPUT_PIN_LOAD                     ; 5                                     ; --                             ; --          ; 1.5-V HSTL Class I  ;
+; OUTPUT_PIN_LOAD                     ; 5                                     ; --                             ; --          ; 1.5-V HSTL Class II ;
+; OUTPUT_PIN_LOAD                     ; 5                                     ; --                             ; --          ; 1.8-V HSTL Class I  ;
+; OUTPUT_PIN_LOAD                     ; 5                                     ; --                             ; --          ; 1.8-V HSTL Class II ;
+; PARTITION_COLOR                     ; 16764057                              ; --                             ; --          ; Top                 ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --                             ; --          ; Top                 ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --                             ; --          ; Top                 ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --                             ; --          ; --                  ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --                             ; --          ; --                  ;
+; SMART_RECOMPILE                     ; On                                    ; Off                            ; --          ; --                  ;
++-------------------------------------+---------------------------------------+--------------------------------+-------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:01:02     ; 1.0                     ; 524 MB              ; 00:00:56                           ;
+; Fitter                    ; 00:01:33     ; 1.0                     ; 699 MB              ; 00:01:26                           ;
+; Assembler                 ; 00:00:06     ; 1.0                     ; 425 MB              ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 450 MB              ; 00:00:04                           ;
+; MIF/HEX Update            ; 00:00:04     ; 1.0                     ; 465 MB              ; 00:00:03                           ;
+; Assembler                 ; 00:00:07     ; 1.0                     ; 427 MB              ; 00:00:05                           ;
+; MIF/HEX Update            ; 00:00:02     ; 1.0                     ; 465 MB              ; 00:00:02                           ;
+; Assembler                 ; 00:00:05     ; 1.0                     ; 427 MB              ; 00:00:05                           ;
+; MIF/HEX Update            ; 00:00:02     ; 1.0                     ; 465 MB              ; 00:00:02                           ;
+; Assembler                 ; 00:00:05     ; 1.0                     ; 423 MB              ; 00:00:05                           ;
+; MIF/HEX Update            ; 00:00:03     ; 1.0                     ; 465 MB              ; 00:00:02                           ;
+; Assembler                 ; 00:00:05     ; 1.0                     ; 423 MB              ; 00:00:05                           ;
+; MIF/HEX Update            ; 00:00:02     ; 1.0                     ; 465 MB              ; 00:00:03                           ;
+; Assembler                 ; 00:00:05     ; 1.0                     ; 423 MB              ; 00:00:05                           ;
+; Total                     ; 00:03:26     ; --                      ; --                  ; 00:03:08                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; JCF_UBC-PC       ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter                    ; JCF_UBC-PC       ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; JCF_UBC-PC       ; Windows 7 ; 6.1        ; x86_64         ;
+; TimeQuest Timing Analyzer ; JCF_UBC-PC       ; Windows 7 ; 6.1        ; x86_64         ;
+; MIF/HEX Update            ; JCF_UBC-PC       ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; JCF_UBC-PC       ; Windows 7 ; 6.1        ; x86_64         ;
+; MIF/HEX Update            ; JCF_UBC-PC       ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; JCF_UBC-PC       ; Windows 7 ; 6.1        ; x86_64         ;
+; MIF/HEX Update            ; JCF_UBC-PC       ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; JCF_UBC-PC       ; Windows 7 ; 6.1        ; x86_64         ;
+; MIF/HEX Update            ; JCF_UBC-PC       ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; JCF_UBC-PC       ; Windows 7 ; 6.1        ; x86_64         ;
+; MIF/HEX Update            ; JCF_UBC-PC       ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; JCF_UBC-PC       ; Windows 7 ; 6.1        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off DE2_8052 -c DE2_8052
+quartus_fit --read_settings_files=off --write_settings_files=off DE2_8052 -c DE2_8052
+quartus_asm --read_settings_files=off --write_settings_files=off DE2_8052 -c DE2_8052
+quartus_sta DE2_8052 -c DE2_8052
+quartus_cdb DE2_8052 -c DE2_8052 --update_mif
+quartus_asm --read_settings_files=on --write_settings_files=off DE2_8052 -c DE2_8052
+quartus_cdb DE2_8052 -c DE2_8052 --update_mif
+quartus_asm --read_settings_files=on --write_settings_files=off DE2_8052 -c DE2_8052
+quartus_cdb DE2_8052 -c DE2_8052 --update_mif
+quartus_asm --read_settings_files=on --write_settings_files=off DE2_8052 -c DE2_8052
+quartus_cdb DE2_8052 -c DE2_8052 --update_mif
+quartus_asm --read_settings_files=on --write_settings_files=off DE2_8052 -c DE2_8052
+quartus_cdb DE2_8052 -c DE2_8052 --update_mif
+quartus_asm --read_settings_files=on --write_settings_files=off DE2_8052 -c DE2_8052
+
+
+

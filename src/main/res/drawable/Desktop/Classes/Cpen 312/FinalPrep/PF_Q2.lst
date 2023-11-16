@@ -1,0 +1,13 @@
+0000 C0D0         1   PUSH psw
+0002 C0E0         2   Push acc
+0004 C000         3   PUSH 00H
+0006 E9           4   MOV A, R1
+0007 29           5   ABB: ADD A, R1
+0008 2432         6   ADD A, #32H
+000A F8           7   MOV R0, A
+000B D8FA         8   DJNZ R0, abb
+000D D082         9   POP DPL
+000F D0E0        10   POP ACC
+0011 D0D0        11   POP PSW
+0013 22          12   RET 
+0014             13   en

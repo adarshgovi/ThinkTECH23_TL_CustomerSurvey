@@ -1,0 +1,23 @@
+org 3000H
+BCD_X_20:
+	; BCD*2
+	MOV A, R4
+	ADD A, R4
+	DA A
+	MOV R4, A
+	MOV A, R5
+	ADDC A, R5
+	DA A
+	MOV R5, A
+	; Multiply BCD * 2 by 10
+	MOV R1, #4
+	L1: CLR C
+	MOV A, R4
+	RLC A
+	MOV R4, A
+	MOV A, R5
+	RLC A
+	MOV R5, A
+	DJNZ R1, L1	
+	RET
+END

@@ -1,0 +1,13 @@
+PUSH psw
+Push acc
+PUSH 00H
+MOV A, R1
+ABB: ADD A, R1
+ADD A, #32H
+MOV R0, A
+DJNZ R0, abb
+POP DPL
+POP ACC
+POP PSW
+RET 
+end

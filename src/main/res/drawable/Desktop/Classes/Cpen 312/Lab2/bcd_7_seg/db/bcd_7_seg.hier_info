@@ -1,0 +1,6 @@
+|orvhdl
+PB1 => LED.IN0
+PB2 => LED.IN1
+LED <= LED.DB_MAX_OUTPUT_PORT_TYPE
+
+
